@@ -15,8 +15,8 @@ ADMINS = [7098943602]
 PREMIUM_USERS = set()
 # =====================================
 
-bot = Bot(token=BOT_TOKEN, parse_mode="HTML")
-dp = Dispatcher()
+bot = Bot(token=BOT_TOKEN,
+default=DefaultBotProperties(parse_mode="HTML"))
 
 # =============== MENU ===============
 def main_menu():
